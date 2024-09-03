@@ -159,17 +159,17 @@ const MyClubsScreen: React.FC<MyClubsScreenProps> = () => {
         return (
             <View style={getStyle(['mt-64', 'px-32'])}>
                 <CTButton
-                    title="Login to My Clubs"
-                    style={getStyle('mb-32')}
-                    onPress={() => navigation.navigate('Login')}
-                />
-                <CTButton
                     title="Register to Conga"
+                    style={getStyle('mb-32')}
                     color={colors.secondary}
                     onPress={() => {
                         const congaClub = clubs.find((x) => x.type === CLUB_TYPE.VIRTUAL);
                         navigation.navigate('Register', { club: congaClub });
                     }}
+                />
+                <CTButton
+                    title="Login to My Clubs"
+                    onPress={() => navigation.navigate('Login')}
                 />
             </View>
         );
