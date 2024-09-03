@@ -523,7 +523,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.bryan.tennislives;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bryan.congalives;
 				PRODUCT_NAME = Conga;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -558,7 +558,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.bryan.tennislives;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bryan.congalives;
 				PRODUCT_NAME = Conga;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
