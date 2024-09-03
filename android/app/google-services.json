@@ -1,0 +1,122 @@
+{
+  "project_info": {
+    "project_number": "757795823003",
+    "firebase_url": "https://myclublives.firebaseio.com",
+    "project_id": "myclublives",
+    "storage_bucket": "myclublives.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:757795823003:android:3c8f01bb3169bb183a153e",
+        "android_client_info": {
+          "package_name": "com.apid.congalives"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "757795823003-m2m0qflbohfvn2od7gh6jpd6hobde0bf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIEPJH48GXYoHVZpIfc1qFyJyc3GlSNRM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "757795823003-m2m0qflbohfvn2od7gh6jpd6hobde0bf.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "757795823003-2o7uoimdoe9dir1gq9b73tcj4pv4cc2v.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.apid.congalives",
+                "app_store_id": "1471378446"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:757795823003:android:d07e87cecff5c0f63a153e",
+        "android_client_info": {
+          "package_name": "com.apid.congalives"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "757795823003-m2m0qflbohfvn2od7gh6jpd6hobde0bf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIEPJH48GXYoHVZpIfc1qFyJyc3GlSNRM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "757795823003-m2m0qflbohfvn2od7gh6jpd6hobde0bf.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "757795823003-2o7uoimdoe9dir1gq9b73tcj4pv4cc2v.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.apid.congalives",
+                "app_store_id": "1471378446"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:757795823003:android:13b12c13c5bfce2d3a153e",
+        "android_client_info": {
+          "package_name": "com.oparkinc.mctl"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "757795823003-m2m0qflbohfvn2od7gh6jpd6hobde0bf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIEPJH48GXYoHVZpIfc1qFyJyc3GlSNRM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "757795823003-m2m0qflbohfvn2od7gh6jpd6hobde0bf.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "757795823003-2o7uoimdoe9dir1gq9b73tcj4pv4cc2v.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.apid.congalives",
+                "app_store_id": "1471378446"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

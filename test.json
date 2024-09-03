@@ -1,0 +1,17 @@
+{
+    "$and": [
+        { "$or": [{ "eventType": "Games" }, { "eventType": "Lecture" }] },
+        {
+            "club": {
+                "$in": [
+                    "5d1f6039eba39a0c13342a70",
+                    "5db9eaf0fbfc03020789a0ce",
+                    "5ef3c2687f4876444ec51473",
+                    "5fb8b4db51b7bd573effb68a",
+                    "6126a192dec5f22920c1f606",
+                    "61a73e800c8a4046cf9da752"
+                ]
+            }
+        }
+    ]
+}
