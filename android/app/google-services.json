@@ -8,7 +8,7 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:757795823003:android:3c8f01bb3169bb183a153e",
+        "mobilesdk_app_id": "1:757795823003:android:c2cd546b87b2b30e3a153e",
         "android_client_info": {
           "package_name": "com.apid.congalives"
         }
@@ -35,7 +35,7 @@
               "client_id": "757795823003-2o7uoimdoe9dir1gq9b73tcj4pv4cc2v.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.apid.congalives",
+                "bundle_id": "com.bryan.tennislives",
                 "app_store_id": "1471378446"
               }
             }
@@ -45,9 +45,9 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:757795823003:android:d07e87cecff5c0f63a153e",
+        "mobilesdk_app_id": "1:757795823003:android:3c8f01bb3169bb183a153e",
         "android_client_info": {
-          "package_name": "com.apid.congalives"
+          "package_name": "com.apid.tennislives"
         }
       },
       "oauth_client": [
@@ -72,7 +72,7 @@
               "client_id": "757795823003-2o7uoimdoe9dir1gq9b73tcj4pv4cc2v.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.apid.congalives",
+                "bundle_id": "com.bryan.tennislives",
                 "app_store_id": "1471378446"
               }
             }
@@ -109,7 +109,7 @@
               "client_id": "757795823003-2o7uoimdoe9dir1gq9b73tcj4pv4cc2v.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.apid.congalives",
+                "bundle_id": "com.bryan.tennislives",
                 "app_store_id": "1471378446"
               }
             }
