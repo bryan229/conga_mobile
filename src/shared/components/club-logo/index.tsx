@@ -22,8 +22,11 @@ const CPClubLogo: React.FC<CPClubLogoProps> = ({ source, name, size = 30 }) => {
     const DefaultLogo = () => {
         return (
             <View style={styles.defaultLogoContainer}>
-                <CTText color={colors.white} fontFamily={fonts.montserrat.bold} style={styles.defaultLogoText}>
-                    {(name || 'C')[0]}
+                {/* <CTText color={colors.white} fontFamily={fonts.montserrat.bold} style={styles.defaultLogoText}>
+                    {(name || 'C')[0]} */}
+                <CTText color={colors.white} fontFamily={fonts.montserrat.bold} size={9}  >
+                    {/* {(name || 'C')[0]} */}
+                    {('Let\'s Play')}
                 </CTText>
             </View>
         );

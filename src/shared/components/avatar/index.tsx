@@ -22,8 +22,10 @@ const CPAvatar: React.FC<CPAvatarProps> = ({ style, source, name, size = 30 }) =
     const DefaultLogo = () => {
         return (
             <View style={[styles.defaultPhotoContainer, style]}>
-                <CTText color={colors.white} fontFamily={fonts.montserrat.bold} style={styles.defaultPhotoText}>
-                    {(name || 'C')[0]}
+                {/* <CTText color={colors.white} fontFamily={fonts.montserrat.bold} style={styles.defaultPhotoText}> */}
+                <CTText color={colors.white} fontFamily={fonts.montserrat.bold} size={9}  >
+                    {/* {(name || 'C')[0]} */}
+                    {('Let\'s Play')}
                 </CTText>
             </View>
         );
