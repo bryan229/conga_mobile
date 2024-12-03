@@ -112,7 +112,7 @@ const ChatListScreen = () => {
                     <View style={getStyle(['row', 'justify-between', 'align-items-center', 'mb-16'])}>
                         <View />
                         <CTText h3 fontFamily={fonts.montserrat.bold} color={colors.text}>
-                            Seach Members
+                            Search Members
                         </CTText>
                         <TouchableOpacity onPress={toggle}>
                             <Icon name="close" type={IconType.Ionicons} size={25} />
