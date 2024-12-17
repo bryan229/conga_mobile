@@ -20,7 +20,6 @@ import PostNavigator from './post-navigator';
 import OpponentScreen from '@screens/opponents';
 import ChatListScreen from '@screens/chat/list';
 import ChatRoomScreen from '@screens/chat/room';
-// import CircleTabNavigator from './circle-navigator/CircleTabNavigator';
 import NewCircleScreen from '@screens/circles/new';
 import CircleMessageTabNavigator from './circle-navigator/CircleMessageTabNavigator';
 import InitNavigator from './init-navigator';
@@ -113,7 +112,6 @@ const MainNavigation = () => {
                             <Stack.Screen name="Opponents" component={OpponentScreen} />
                             <Stack.Screen name="ChatList" component={ChatListScreen} />
                             <Stack.Screen name="ChatRoom" component={ChatRoomScreen} />
-                            {/* <Stack.Screen name="Circles" component={CircleTabNavigator} /> */}
                             <Stack.Screen name="Resources" component={FacilityResourcesScreen} />
                             <Stack.Screen name="NewCircle" component={NewCircleScreen} />
                             <Stack.Screen name="CreateNewEvent" component={CreateNewEventScreen} />

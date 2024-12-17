@@ -102,7 +102,6 @@ export type HomeStackParamList = {
         defaultScreen?: RouteName;
     };
     Scan: undefined;
-    // Resources: undefined;
     Circles:
     | {
         initScreen?: keyof CircleStackParamList;

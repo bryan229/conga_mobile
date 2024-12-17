@@ -114,10 +114,6 @@ const MainHeader: React.FC<HeaderPropsType> = ({ title, style }) => {
         navigation.navigate('Opponents');
     };
 
-    const gotoCircles = () => {
-        popOut();
-        navigation.navigate('Circles');
-    };
     const gotoResources = () => {
         popOut();
         navigation.navigate('Resources');
@@ -159,14 +155,6 @@ const MainHeader: React.FC<HeaderPropsType> = ({ title, style }) => {
                                 </CTText>
                             </TouchableOpacity>
                         </Animated.View>
-                        {/* <Animated.View style={[styles.circleContainer, { bottom: icon_4 }]}>
-                            <TouchableOpacity style={styles.circleContent} onPress={gotoCircles}>
-                                <Icon type={IconType.Ionicons} name="people" size={25} color={colors.white} />
-                                <CTText size={6} color={colors.white}>
-                                    Circles
-                                </CTText>
-                            </TouchableOpacity>
-                        </Animated.View> */}
                         {!isVirtualClub() && (
                             <>
                                 <Animated.View style={[styles.circleContainer, { bottom: icon_4 }]}>

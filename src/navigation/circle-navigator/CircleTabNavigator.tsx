@@ -16,19 +16,20 @@ import { checkSubscription } from '@services/helpers/user';
 import { AlertModalButton } from '@services/types';
 import { showAlertModal } from '@store/actions';
 import MainHeader from '@navigation/components/main-header';
+import { useAppNavigation } from '@services/hooks/useNavigation';
 
 
 export type ScreenProps = StackScreenProps<HomeStackParamList, 'Circles'>;
 const Tab = createMaterialTopTabNavigator<CircleStackParamList>();
 
-const CircleTabNavigator = ({ navigation, route }: ScreenProps) => {
-// const CircleTabNavigator = () => {
+const CircleTabNavigator = () => {
+    const navigation = useAppNavigation();
     const dispatch = useAppDispatch();
     const club = useAppSelector((state) => state.club.club!);
     const user = useAppSelector((state) => state.auth.user!);
     const theme = useTheme();
     const { colors } = theme;
-    const initScreen = route.params?.initScreen ?? 'MyCircles';
+    const initScreen = 'MyCircles';
     const renderTabIcon = (route: any, focused: boolean, color: string) => {
         let iconName: string = 'home';
         switch (route.name) {
