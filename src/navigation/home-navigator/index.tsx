@@ -16,7 +16,7 @@ import RequestNavigator from '@navigation/request-navigator';
 import ScehduleNavigator from '@navigation/schedule-navigator';
 import NotificationManager from '@navigation/components/notification-manager';
 import { CLUB_TYPE } from '@shared/constants';
-import FacilityResourcesScreen from '@screens/facility-resources';
+import CircleTabNavigator from '@navigation/circle-navigator/CircleTabNavigator';
 import ParticipatingOrganizationsScreen from '@screens/participating-organizations';
 import { SubClubApi } from '@services/api';
 import { putSubClubs } from '@store/actions';
@@ -68,8 +68,8 @@ const HomeNavigator: React.FC<HomeNavigatorProps> = ({ route }) => {
             case 'Reservations':
                 iconName = focused ? 'watch' : 'watch-outline';
                 break;
-            case 'Resources':
-                iconName = focused ? 'tennisball' : 'tennisball-outline';
+            case 'Circles':
+                iconName = focused ? 'people' : 'people-outline';
                 break;
             case 'Organizations':
                 iconName = focused ? 'business' : 'business-outline';
@@ -93,7 +93,7 @@ const HomeNavigator: React.FC<HomeNavigatorProps> = ({ route }) => {
         else if (route.name === 'ClubEvents') return 'Club Events';
         else if (route.name === 'Requests') return 'Requests';
         else if (route.name === 'Reservations') return 'Reservations';
-        else if (route.name === 'Resources') return 'Resources';
+        else if (route.name === 'Circles') return 'Circles';
         else if (route.name === 'Organizations') return 'Organizations';
         return 'Messages';
     };
@@ -129,7 +129,7 @@ const HomeNavigator: React.FC<HomeNavigatorProps> = ({ route }) => {
                         {isVirtualClub() ? (
                             <>
                                 <Tab.Screen name="Organizations" component={ParticipatingOrganizationsScreen} />
-                                <Tab.Screen name="Resources" component={FacilityResourcesScreen} />
+                                <Tab.Screen name="Circles" component={CircleTabNavigator} />
                             </>
                         ) : (
                             <>

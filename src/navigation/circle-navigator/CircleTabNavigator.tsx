@@ -3,8 +3,7 @@ import Icon, { IconType } from 'react-native-dynamic-vector-icons';
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 import { useTheme } from '@services/hooks/useTheme';
 import { StackScreenProps } from '@react-navigation/stack';
-import { RootStackParamList, CircleStackParamList } from '@navigation/types';
-import BackHeader from '@navigation/components/back-header';
+import { CircleStackParamList, HomeStackParamList } from '@navigation/types';
 import CTText from '@shared/components/controls/ct-text';
 import { useAppDispatch, useAppSelector } from '@store/hook';
 import { StyleSheet, TouchableOpacity, View } from 'react-native';
@@ -16,18 +15,20 @@ import CircleListScreen from '@screens/circles/tab/list';
 import { checkSubscription } from '@services/helpers/user';
 import { AlertModalButton } from '@services/types';
 import { showAlertModal } from '@store/actions';
+import MainHeader from '@navigation/components/main-header';
 
-export type ScreenProps = StackScreenProps<RootStackParamList, 'Circles'>;
+
+export type ScreenProps = StackScreenProps<HomeStackParamList, 'Circles'>;
 const Tab = createMaterialTopTabNavigator<CircleStackParamList>();
 
 const CircleTabNavigator = ({ navigation, route }: ScreenProps) => {
+// const CircleTabNavigator = () => {
     const dispatch = useAppDispatch();
     const club = useAppSelector((state) => state.club.club!);
     const user = useAppSelector((state) => state.auth.user!);
     const theme = useTheme();
     const { colors } = theme;
     const initScreen = route.params?.initScreen ?? 'MyCircles';
-
     const renderTabIcon = (route: any, focused: boolean, color: string) => {
         let iconName: string = 'home';
         switch (route.name) {
@@ -99,16 +100,19 @@ const CircleTabNavigator = ({ navigation, route }: ScreenProps) => {
 
     return (
         <>
-            <BackHeader title="Circles">
-                <TouchableOpacity onPress={() => goNewCircle()}>
-                    <View style={getStyle(['row', 'justify-center'])}>
-                        <Icon type={IconType.Ionicons} name="add" size={25} color={colors.primary} />
-                    </View>
-                    <CTText color={colors.primary} size={8} fontFamily={fonts.montserrat.regular}>
-                        Create Own Circle
-                    </CTText>
-                </TouchableOpacity>
-            </BackHeader>
+            <View >
+                <MainHeader title="Circles" />
+                <View style={getStyle(['justify-end', 'row'])}>
+                    <TouchableOpacity onPress={() => goNewCircle()} style={{ alignItems: 'center' }}>
+                        <View style={getStyle(['column', 'justify-center'])}>
+                            <Icon type={IconType.Ionicons} name="add" size={25} color={colors.primary} />
+                        </View >
+                        <CTText color={colors.primary} size={8} fontFamily={fonts.montserrat.regular}>
+                            Create Own Circle
+                        </CTText>
+                    </TouchableOpacity>
+                </View>
+            </View>
             <Tab.Navigator
                 screenOptions={({ route }) => ({
                     tabBarIcon: ({ focused, color }) => renderTabIcon(route, focused, color),
@@ -120,6 +124,8 @@ const CircleTabNavigator = ({ navigation, route }: ScreenProps) => {
                     lazy: true,
                 })}
                 initialRouteName={initScreen}
+                style={{ zIndex: -1 }}
+
             >
                 <Tab.Screen name="MyCircles" component={MyCirclesScreen} />
                 <Tab.Screen name="Invitations" component={CircleInvitationScreen} />

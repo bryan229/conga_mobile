@@ -25,10 +25,10 @@ export type RootStackParamList = {
         club: Club;
     };
     Init:
-        | {
-              initScreen?: keyof InitStackParamList;
-          }
-        | undefined;
+    | {
+        initScreen?: keyof InitStackParamList;
+    }
+    | undefined;
     Home: { initScreen?: keyof HomeStackParamList } | undefined;
     Account: undefined;
     ScanQRCode: undefined;
@@ -44,11 +44,7 @@ export type RootStackParamList = {
     ChatRoom: {
         partner: User;
     };
-    Circles:
-        | {
-              initScreen?: keyof CircleStackParamList;
-          }
-        | undefined;
+    Resources: undefined;
     NewCircle: undefined;
     CreateNewEvent: {
         circleMessage?: CircleMessage;
@@ -106,7 +102,12 @@ export type HomeStackParamList = {
         defaultScreen?: RouteName;
     };
     Scan: undefined;
-    Resources: undefined;
+    // Resources: undefined;
+    Circles:
+    | {
+        initScreen?: keyof CircleStackParamList;
+    }
+    | undefined;
     Organizations: undefined;
 };
 

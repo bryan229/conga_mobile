@@ -5,6 +5,7 @@ import { ScreenWidth, normalizeText } from '@freakycoder/react-native-helpers';
 interface Style {
     containerStyle: ViewStyle;
     contentStyle: ViewStyle;
+    headerStyle: ViewStyle;
     loadingContainerStyle: ViewStyle;
     listContainerStyle: ViewStyle;
     listStyle: ViewStyle;
@@ -25,6 +26,10 @@ export default (theme: ExtendedTheme) => {
         containerStyle: {
             backgroundColor: colors.background,
             flex: 1,
+        },
+        headerStyle: {
+            borderBottomColor: colors.borderColor,
+            borderBottomWidth: 1,
         },
         contentStyle: {
             flex: 1,

@@ -2,10 +2,9 @@ import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import * as Progress from 'react-native-progress';
 import Clipboard from '@react-native-clipboard/clipboard';
 import { View } from 'react-native';
-import { StackScreenProps } from '@react-navigation/stack';
+import { StackScreenProps, } from '@react-navigation/stack';
 import { useIsFocused } from '@react-navigation/native';
 import createStyles from './style';
-import { HomeStackParamList } from '@navigation/types';
 import { useTheme } from '@services/hooks/useTheme';
 import CTText from '@shared/components/controls/ct-text';
 import { Circle, FacilityResource } from '@services/models';
@@ -17,7 +16,6 @@ import { ResourceApi } from '@services/api';
 import Icon, { IconType } from 'react-native-dynamic-vector-icons';
 import CTInfiniteFlatlist from '@shared/components/controls/ct-infinite-flatlist';
 import ResourceItem from './components/resource-item';
-import MainHeader from '@navigation/components/main-header';
 import ResourceSearchOptionPanel from './components/search-option-panel';
 import { filterDateRangeToValues, mileToKm } from '@utils';
 import CPBottomSheet from '@shared/components/bootom-sheet';
@@ -26,10 +24,12 @@ import SelectCircleModal from './components/select-circle-modal';
 import { putResourceQuery } from '@store/actions/resource';
 import { AlertModalButton } from '@services/types';
 import { checkSubscription } from '@services/helpers/user';
+import { RootStackParamList } from '@navigation/types';
+import BackHeader from '@navigation/components/back-header';
 
 const LIMIT = 100;
 
-type ScreenProps = StackScreenProps<HomeStackParamList, 'Resources'>;
+type ScreenProps = StackScreenProps<RootStackParamList, 'Resources'>;
 
 const FacilityResourcesScreen: React.FC<ScreenProps> = () => {
     const club = useAppSelector((state) => state.club.club!);
@@ -254,7 +254,7 @@ const FacilityResourcesScreen: React.FC<ScreenProps> = () => {
 
     return (
         <View style={styles.containerStyle}>
-            <MainHeader title="Resources" />
+            <BackHeader title="Resources" style={styles.headerStyle} />
             <View style={styles.contentStyle}>
                 <Loading />
                 <ResourceSearchOptionPanel query={query} onOpenFilter={onOpenFilter} />

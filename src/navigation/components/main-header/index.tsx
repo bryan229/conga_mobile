@@ -118,6 +118,10 @@ const MainHeader: React.FC<HeaderPropsType> = ({ title, style }) => {
         popOut();
         navigation.navigate('Circles');
     };
+    const gotoResources = () => {
+        popOut();
+        navigation.navigate('Resources');
+    };
 
     return (
         <View style={[styles.container, style]}>
@@ -148,13 +152,21 @@ const MainHeader: React.FC<HeaderPropsType> = ({ title, style }) => {
                             </TouchableOpacity>
                         </Animated.View>
                         <Animated.View style={[styles.circleContainer, { bottom: icon_3 }]}>
+                            <TouchableOpacity style={styles.circleContent} onPress={gotoResources}>
+                                <Icon type={IconType.Ionicons} name="tennisball" size={25} color={colors.white} />
+                                <CTText size={6} color={colors.white}>
+                                    Resources
+                                </CTText>
+                            </TouchableOpacity>
+                        </Animated.View>
+                        {/* <Animated.View style={[styles.circleContainer, { bottom: icon_4 }]}>
                             <TouchableOpacity style={styles.circleContent} onPress={gotoCircles}>
                                 <Icon type={IconType.Ionicons} name="people" size={25} color={colors.white} />
                                 <CTText size={6} color={colors.white}>
                                     Circles
                                 </CTText>
                             </TouchableOpacity>
-                        </Animated.View>
+                        </Animated.View> */}
                         {!isVirtualClub() && (
                             <>
                                 <Animated.View style={[styles.circleContainer, { bottom: icon_4 }]}>
