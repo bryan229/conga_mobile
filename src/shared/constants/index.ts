@@ -1,4 +1,4 @@
-export const VERSION_NUMBER = 40;
+export const VERSION_NUMBER = 41;
 export const DEMOCLUB_ID = '00002';
 export const DEFAULT_LOGO = 'https://tennislives.s3.amazonaws.com/logo.png';
 
